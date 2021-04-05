@@ -1,0 +1,87 @@
+*{
+    margin:0;
+    padding:0;
+    outline: none;
+}
+:root{
+    --cian: #5EFCE8;
+    --azulClaro: #0396FF;
+}
+.row{
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+main{
+    height: 100vh;
+    background-image: linear-gradient( 135deg, #43CBFF 10%, #9708CC 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.calculadora{
+    width: 50%;
+    background-image: linear-gradient( 135deg, #5EFCE8 10%, #736EFE 100%);
+    border-radius: 20px;
+    padding: 3rem 1.5rem; 
+}
+#text-calculador{
+    opacity: 0;
+    height: 0.1px;
+    width: 0.1px;
+    position:absolute;
+    z-index: inherit;
+    
+}
+.textarea{
+    
+    border-radius: 50px;
+    font-size: 1.5rem;
+    text-align:center;
+    padding: .5rem;
+    resize: none;
+    
+}
+button{
+    padding:0;
+    height: 5.5rem;
+    width: 5.5rem !important;
+    background-image: linear-gradient( 135deg, #2AFADF 10%, #4C83FF 100%);
+    color: white;
+    border: 1px solid rgba(180, 180, 180, 0.322);
+    border-radius: 50%;
+    font-size: 1.5rem;
+    transition: 1s linear;
+}
+.botones-row{
+    margin: 0.5rem 0;
+}
+.poderes > button{
+
+    color: white;
+    height: 3.5rem;
+    width: 30% !important;
+    border-radius: 10px;
+}
+button:hover{
+    background-image: linear-gradient( 135deg, #65FDF0 10%, #1D6FA3 100%);
+    color: white;
+    
+}
+
+
+@media(max-width:768px){
+    .calculadora{
+        width: 90%;
+    }
+}
+@media(max-width:450px){
+    .calculadora{
+        width: 100%;
+        padding: 2rem 0.5rem;
+    }
+    button{
+        height: 3.5rem;
+        width: 3.5rem !important;
+    }
+}
